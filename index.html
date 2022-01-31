@@ -12,8 +12,7 @@
         <h2>Login</h2>
         <div id='msgErro'></div>
         
-        <form action="">
-            
+        <form action="">   
             <div class="input-field">
                 <input type="text" name="username" id="username"
                     placeholder="Usuario">
@@ -24,8 +23,7 @@
                     placeholder="Senha">
                 <div class="underline"></div>
             </div>
-
-            <input type="submit" value="Continue">
+            <input type="submit" value="Continue" onclick="logar(); return false">
         </form>
 
                     </a>
@@ -33,8 +31,18 @@
             </div>
         </div>
     </main>
+  <script>
+function logar(){
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    if(username == "admin" && password == "admin"){
+        alert("Sucesso");
+        location.href = "home.html";
+    }else{
+        alert("Usuario ou senha invalida");
+    }
 
-    
-    <script src="javaScript/loginconfirm.js"></script>
+  }
+  </script> 
 </body>
 </html>
