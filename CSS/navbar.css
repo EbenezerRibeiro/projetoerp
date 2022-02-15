@@ -6,13 +6,6 @@
     font-family: "Poppins", sans-serif;
 }
 
-body {
-    background: linear-gradient(45deg, #4d08ee, #00ace0);
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    min-width: 100vw;
-
-}
 a {
     color: #fff;
     text-decoration:none;
